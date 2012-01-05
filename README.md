@@ -16,6 +16,7 @@ You'll find some pre configured stuff like :
 * Swiftmailer as the email sender
 * MongoDB as the storage with Doctrine as the ODM
 * Annotations but not for Doctrine
+* Behat for BDD
 * A lightweight AcmeDemoBundle on dev/test environment
 
 Interested ? Just go through this steps in order to get started :
@@ -40,6 +41,7 @@ $ php app/check.php
 ```
 
 We suggest fixing any issues or Symfony recommandations before moving on.
+Having troubles ? [Read the doc](http://symfony.com/doc/current/book/installation.html#configuration-and-setup)
 
 ### Install vendors
 
