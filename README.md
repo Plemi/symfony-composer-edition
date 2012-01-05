@@ -6,7 +6,7 @@ Symfony 2.1 Composer Edition
 Symfony 2.1 Composer Edition is managed by [Composer](http://getcomposer.org/)
 and [Packagist](http://packagist.org/) thanks to the great work of [@Seldaek](https://github.com/Seldaek) and others.
 
-We give lot of credits to the work of KnpLabs [symfony with composer](https://github.com/KnpLabs/symfony-with-composer).
+We give lots of credits to the work of KnpLabs [symfony with composer](https://github.com/KnpLabs/symfony-with-composer).
 
 ### What's in it ?
 
