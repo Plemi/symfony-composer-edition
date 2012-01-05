@@ -29,7 +29,7 @@ Interested ? Just go through this steps in order to get started :
 
 ### Download the Composer Edition
 
-Download archive from [here](https://github.com/Plemi/symfony-composer-edition).
+Download archive from [here](https://github.com/Plemi/symfony-composer-edition/zipball/master).
 
 ### Check Symfony requirements
 
