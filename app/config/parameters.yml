@@ -1,0 +1,11 @@
+parameters:
+    mongodb_server:    mongodb://localhost:27017
+    mongodb_database:  localhost
+
+    mailer_transport:  smtp
+    mailer_host:       localhost
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            fr
+    secret:            ThisTokenIsNotSoSecretChangeIt

@@ -1,0 +1,26 @@
+imports:
+    - { resource: config.yml }
+
+# Doctrine MongoDB Configuration
+doctrine_mongodb:
+    document_managers:
+        default:
+            metadata_cache_driver:
+                type: memcache
+                class: Doctrine\Common\Cache\MemcacheCache
+                host: localhost
+                port: 11211
+                instance_class: Memcache
+    auto_generate_proxy_classes:     false
+    auto_generate_hydrator_classes:  false
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: error
+            handler:      nested
+        nested:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: debug

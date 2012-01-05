@@ -1,0 +1,20 @@
+{
+    "require": {
+        "php": ">=5.3.6",
+        "symfony/symfony": "2.1.0-dev",
+        "twig/extensions": "master-dev",
+        "symfony/assetic-bundle": "master-dev",
+        "sensio/framework-extra-bundle": "2.0.0-dev",
+        "doctrine/dbal": "2.2-dev",
+        "doctrine/doctrine-bundle": "master-dev",
+        "doctrine/doctrine-fixtures-bundle": "*",
+        "doctrine/mongodb-odm-bundle": "master-dev",
+        "behat/behat-bundle": "*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    }
+}

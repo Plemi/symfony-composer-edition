@@ -1,0 +1,25 @@
+# Demo
+_welcome:
+    pattern: /
+    defaults: 
+        _controller: AcmeDemoBundle:Welcome:index
+
+_demo:
+    resource: "@AcmeDemoBundle/Controller/DemoController.php"
+    type: annotation
+    prefix: /demo
+
+_assetic:
+    resource: .
+    type:     assetic
+
+_wdt:
+    resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
+    prefix:   /_wdt
+
+_profiler:
+    resource: "@WebProfilerBundle/Resources/config/routing/profiler.xml"
+    prefix:   /_profiler
+
+_main:
+    resource: routing.yml
