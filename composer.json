@@ -5,9 +5,6 @@
         "twig/extensions": "master-dev",
         "symfony/assetic-bundle": "master-dev",
         "sensio/framework-extra-bundle": "2.0.0-dev",
-        "doctrine/dbal": "2.2-dev",
-        "doctrine/doctrine-bundle": "master-dev",
-        "doctrine/doctrine-fixtures-bundle": "*",
         "doctrine/mongodb-odm-bundle": "master-dev",
         "behat/behat-bundle": "*"
     },
