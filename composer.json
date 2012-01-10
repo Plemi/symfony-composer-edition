@@ -1,7 +1,7 @@
 {
     "require": {
         "php": ">=5.3.6",
-        "symfony/symfony": ">=2.1.0",
+        "symfony/symfony": "2.1.*",
         "twig/extensions": "master-dev",
         "symfony/assetic-bundle": "master-dev",
         "sensio/framework-extra-bundle": "master-dev",
