@@ -13,6 +13,7 @@ We give lots of credits to the work of KnpLabs [symfony with composer](https://g
 You'll find some pre configured stuff like :
 
 * Twig as the template engine
+* Monolog as the default logger
 * Swiftmailer as the email sender
 * MongoDB as the storage with Doctrine as the ODM
 * Annotations but not for Doctrine
