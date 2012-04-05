@@ -46,17 +46,3 @@ swiftmailer:
     host:      %mailer_host%
     username:  %mailer_user%
     password:  %mailer_password%
-
-# Doctrine MongoDB Configuration
-doctrine_mongodb:
-    connections:
-        default:
-            server: %mongodb_server%
-            options:
-                connect: true
-    default_database: %mongodb_database%_%kernel.environment%
-    document_managers:
-        default:
-            auto_mapping: true
-            metadata_cache_driver:
-                type: array

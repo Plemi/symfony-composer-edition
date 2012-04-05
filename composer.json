@@ -2,18 +2,38 @@
     "require": {
         "php": ">=5.3.6",
         "symfony/symfony": "2.1.*",
-        "twig/extensions": "master-dev",
-        "symfony/monolog-bundle": "master-dev",
-        "symfony/swiftmailer-bundle": "master-dev",
-        "symfony/assetic-bundle": "master-dev",
-        "sensio/framework-extra-bundle": "master-dev",
-        "doctrine/mongodb-odm-bundle": "master-dev",
-        "behat/behat-bundle": "*"
+        "twig/extensions": "dev-master",
+        "symfony/monolog-bundle": "dev-master",
+        "symfony/swiftmailer-bundle": "dev-master",
+        "symfony/assetic-bundle": "dev-master",
+        "sensio/buzz-bundle": "dev-master",
+        "sensio/distribution-bundle": "dev-master",
+        "sensio/framework-extra-bundle": "dev-master"
     },
-
+    "suggest": {
+        "mageekguy/atoum": "dev-xunit",
+        "behat/behat-bundle": "dev-master"
+    },
     "autoload": {
-        "psr-0": {
-            "Acme": "src/"
-        }
+        "psr-0": { "": "src/" }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+        ],
+        "post-update-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web"
     }
 }
