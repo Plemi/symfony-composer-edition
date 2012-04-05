@@ -15,10 +15,8 @@ You'll find some pre configured stuff like :
 * Twig as the template engine
 * Monolog as the default logger
 * Swiftmailer as the email sender
-* MongoDB as the storage with Doctrine as the ODM
-* Annotations but not for Doctrine
-* Behat for BDD
 * A lightweight AcmeDemoBundle on dev/test environment
+* Buzz & BuzzBundle, a lightweight HTTP client
 
 Interested ? Just go through this steps in order to get started :
 
@@ -44,15 +42,25 @@ $ php app/check.php
 We suggest fixing any issues or Symfony recommandations before moving on.
 Having troubles ? [Read the doc](http://symfony.com/doc/current/book/installation.html#configuration-and-setup)
 
-### Install vendors
+### Configure and install dependencies with composer
 
-Just like the standard version of Symfony, you just have to run the same commands that will install/update vendors, update bootstrap file, install assets and clear your cache.
+Setup the project dependencies in file composer.json located on root directory.
+[Read the doc](https://github.com/composer/composer)
+
+Then get composer
+
 
 ``` bash
-$ php bin/vendors install
+$ php curl -s http://getcomposer.org/installer | php
 ```
 
-In order to update dependencies, run the previous command with ```update``` option.
+When done, let composer download and install all your dependencies by executing the following command:
+
+``` bash
+$ php composer.phar install
+```
+
+You can also update the dependencies by running the previous command with ```update``` option instead of ```install```.
 
 ### See it live
 
