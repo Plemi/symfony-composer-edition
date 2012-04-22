@@ -51,7 +51,7 @@ Then get composer
 
 
 ``` bash
-$ php curl -s http://getcomposer.org/installer | php
+$ curl -s http://getcomposer.org/installer | php
 ```
 
 When done, let composer download and install all your dependencies by executing the following command:
